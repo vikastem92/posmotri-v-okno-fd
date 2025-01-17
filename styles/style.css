@@ -164,7 +164,6 @@ ol {
 
 .search-form__pseudo-checkbox::after {
   content: "";
-  position: absolute;
   width: 15px;
   height: 15px;
   background-color: #FFFFFF;
