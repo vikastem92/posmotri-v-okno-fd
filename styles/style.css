@@ -162,14 +162,10 @@ ol {
   position: relative;
 }
 
-.search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   width: 15px;
   height: 15px;
-  background-color: #FFFFFF;
-}
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   background-color: #FFFFFF;
 }
 
