@@ -60,20 +60,24 @@ ol {
   grid-template-columns: 711px 399px;
   align-items: center;
   gap: 30px;
-  margin: 133px 30px;
 }
 
+.result {
+  padding-top: 78px;
+}
 
 .result__video-container {
   position: relative;
   width: 711px;
-  padding-top: 70px;
+  height: 386px;
+  margin-bottom: 16px;
 }
 
 .result__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -100,6 +104,7 @@ ol {
   flex-direction: row;
   gap: 15px;
   justify-content: center;
+  align-items: center;
 }
 
 .search-form__label {
@@ -108,6 +113,7 @@ ol {
   width: fit-content;
   outline: none;
   gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -135,7 +141,7 @@ ol {
 }
 
 .search-form__textfield {
-  width: 225px;
+  min-width: 225px;
   border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
   border-left: none;
@@ -146,6 +152,7 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
+  color: #FFFFFF;
 }
 
 .search-form__textfield:focus {
@@ -178,6 +185,7 @@ ol {
   color: #FFFFFF;
   background-color: transparent;
   border: 1px solid #FFFFFF;
+  height: 34px;
 }
 
 .button:hover {
@@ -196,11 +204,11 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #ffffff;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
-  width: 194px;
-  height: 34px;
+  min-width: 194px;
   align-self: flex-end;
 }
 
@@ -220,13 +228,12 @@ ol {
 
 .content__accent {
   color: #545050;
-  text-transform: uppercase;
 }
 
 .content__list-container {
   position: relative;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list {
@@ -242,9 +249,15 @@ ol {
   cursor: pointer;
 }
 
+.content__list-item:last-child {
+  margin-bottom: 30px;
+}
+
 .content__card-link {
+  display: block;
   color: #FFFFFF;
   text-decoration: none;
+  margin: 2px;
 }
 
 .content__card-link:hover {
@@ -276,7 +289,8 @@ ol {
 }
 
 .content__video-card-title {
-  width: 196px;
+  max-width: 196px;
+  width: 100%;
   font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -300,16 +314,16 @@ ol {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
+  padding-top: 6px;
 }
 
 .content__video-card-thumbnail {
-  width: 100%;
+  width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
 }
 
 .more-button {
-  width: 390px;
-  height: 34px;
+  min-width: 390px;
 }
